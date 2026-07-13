@@ -1,0 +1,33 @@
+[project]
+name = "langgraph-rag"
+version = "0.1.0"
+description = "LangGraph RAG course project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4",
+    "langchain-community",
+    "tiktoken",
+    "langchainhub",
+    "langchain",
+    "langgraph",
+    "tavily-python",
+    "langchain-openai",
+    "python-dotenv",
+    "langchain-pinecone",
+    "langchain-tavily>=0.1.5,<0.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "black",
+    "isort",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
